@@ -1,0 +1,53 @@
+{
+  "name": "react-virtual-checkbox-tree",
+  "version": "0.1.0",
+  "description": "Headless, virtualized checkbox tree for React using @tanstack/react-virtual.",
+  "author": "Jade Ghadry",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jadghadry/react-virtual-checkbox-tree.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jadghadry/react-virtual-checkbox-tree/issues"
+  },
+  "homepage": "https://github.com/jadghadry/react-virtual-checkbox-tree#readme",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "checkbox",
+    "headless",
+    "react",
+    "tanstack",
+    "tree",
+    "virtualized"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "dependencies": {
+    "@tanstack/react-virtual": "^3.0.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0"
+  }
+}
